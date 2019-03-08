@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giphy Gen</title>
+
+    <!-- Added link to css and styling -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+
+    <!-- Added link to the jQuery Library -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <header id="welcome">
+        <h1>Gif Generator</h1>
+        <img src="https://media.giphy.com/media/3ohhwjlY5Qvz1SA4Y8/giphy.gif" alt="animated star" height="50"
+            width="50"></img>
+        <!-- <img src="https://media.giphy.com/media/3o7aD7Oa5QKbXid2ww/giphy.gif"></img> -->
+    </header>
+
+    <div class="container">
+
+        <!-- Row 1 -->
+        <div class="row">
+            <div class="col-sm-3">
+                <dif id="buttons">
+                    <div id="outerForm">
+                        <form id="search-form">
+                            <label for="search-input">Add gif topic: </label>
+                            <input type="text" id="search-input">
+
+                            <!-- Button triggers new topic to be added -->
+                            <input id="add-topic" type="submit" value="Add">
+                        </form>
+                    </div>
+                    <div id="outerButton">
+                        <div id="button-container">
+                            <label>Topics: </label>
+                            <!-- <button data-topic="dog">woof</button> -->
+                        </div>
+                    </div>
+                </dif>
+            </div>
+            <div class="col-sm-9">
+                <div id="outerGif">
+                    <label id="trending">Top 10 Trending: </label>
+                    <div id="gifs-container"></div>
+                </div>
+            </div>
+
+            <!-- Add reference to js file -->
+            <script type="text/javascript" src="assets/javascript/key.js"></script>
+            <script type="text/javascript" src="assets/javascript/logic.js"></script>
+</body>
+
+</html>
